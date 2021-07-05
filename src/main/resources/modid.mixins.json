@@ -6,7 +6,8 @@
   "mixins": [
     "HorseScreenMixin",
     "HorseScreenAccessor",
-    "HandledScreenMixin"
+    "HandledScreenMixin",
+    "AbstractDonkeyEntityMixin"
   ],
   "client": [
   ],
