@@ -22,7 +22,7 @@ public abstract class HorseScreenMixin extends HandledScreen<HorseScreenHandler>
 
 	
 	private static final Identifier TEXTURE = new Identifier("minecraft", "textures/gui/container/horse.png");
-	private static final Identifier TEXTURE2 = new Identifier("origins-classes", "textures/gui/container/horse2.png");
+	private static final Identifier TEXTURE2 = new Identifier("donkeychestsplus", "textures/gui/container/horse2.png");
 
 	public HorseScreenMixin(HorseScreenHandler handler, PlayerInventory inventory, Text title) {
 		super(handler, inventory, title);
