@@ -28,7 +28,7 @@ public abstract class HandledScreenMixin<T extends ScreenHandler> extends Screen
 	@Inject(method = "isClickOutsideBounds", at = @At(value = "HEAD"), cancellable = true)
 		public void isClickOutsideBounds$OriginsClasses(double mouseX, double mouseY, int left, int top, int button, CallbackInfoReturnable<Boolean> ci) {
 		if (((HandledScreen) (Object) this) instanceof HorseScreen) {
-			HorseScreen hs = (HorseScreen) (HandledScreen) (Object) this;
+			HorseScreen hs = (HorseScreen) (Object) this;
 			if (((HorseScreenAccessor) hs).getEntity() instanceof MuleEntity || ((HorseScreenAccessor) hs).getEntity() instanceof DonkeyEntity) {
 				ci.setReturnValue(mouseX < (double)left || mouseY < (double)top || mouseX >= (double)(left + this.backgroundWidth + 72) || mouseY >= (double)(top + this.backgroundHeight) || (mouseX >= (double)(left + this.backgroundWidth) && mouseY >= (double)(top + 81)));
 			}
